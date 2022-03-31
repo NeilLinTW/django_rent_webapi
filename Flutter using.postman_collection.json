@@ -1,0 +1,350 @@
+{
+	"info": {
+		"_postman_id": "a95fab06-3427-466c-8089-221c46f64d8c",
+		"name": "Flutter using",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "testapi",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "a2336456",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "vasili7599",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/token/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"token",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "a2336456",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "vasili7599",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/adv/search/台中市/中區",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"adv",
+						"search",
+						"台中市",
+						"中區"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "detail",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ4MjgzNTA2LCJpYXQiOjE2NDgyODMyMDYsImp0aSI6ImZhYmYxNTNhOWJkZjQ5OTE4N2M2MDE3MzY2ZWEwNDRlIiwidXNlcl9pZCI6Mn0.lZBbL0av774UbGXF-xm02D0NTyN46tL5JQDbmZ12p8A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/adv/detail/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"adv",
+						"detail",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "ucandoit1010",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "vasili7599",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/auth/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"auth",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"b3771855\",\r\n    \"email\":\"a2336456@gmail.com\",\r\n    \"password\":\"vasili7599\"\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/auth/register/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"auth",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateadv",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ2MjkxMzQyLCJpYXQiOjE2NDYyOTEwNDIsImp0aSI6ImI2OWMzNTA1NTdkNDQ2YjliMmRkNTlhMDhiMTY3OGIyIiwidXNlcl9pZCI6Mn0.QtGcemKTfvZcLAwLqxc8k5DqKjfZjyBQTm3A6g9uoRI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"City\":\"台南市\",\r\n    \"Town\":\"中區\",\r\n    \"Addr\":\"文化路1223號\",\r\n    \"Body\":\"房東不修繕\",\r\n    \"User\":1\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/adv/upd/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"adv",
+						"upd",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ4MjgyOTQxLCJpYXQiOjE2NDgyODI2NDEsImp0aSI6ImY1MWI4YjRlMzE4OTQzNzE4ZGE0ZmIxMTYwZDI2MzIwIiwidXNlcl9pZCI6Mn0.w7d-9Ryw_s1gmkE5V3CvYDVI73tacdRYYgk1QA7jsjU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"City\":\"台中市\",\r\n    \"Town\":\"中區\",\r\n    \"Addr\":\"中山路300號\",\r\n    \"Body\":\"房東偷窺\",\r\n    \"Image1\":\"https://drive.google.com/file/d/1eL39QFz-PXdRkbEzZRT48rIA77kCU_m2/view?usp=sharing\",\r\n    \"IP\":\"192.168.110.62\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/adv/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"adv",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_rate",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ3NDk1NTc5LCJpYXQiOjE2NDc0OTUyNzksImp0aSI6ImZkYWEzNzI5ZmJmZjQzNjZhZDFiZjk1NTYzNWNkMWJkIiwidXNlcl9pZCI6Mn0.Wlp4KYzxfTJh_tL_F-kw4wN3DvWH9ECpuOTZr-MjnMk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"IPAddr\":\"199.252.100.3\",\r\n    \"Val\":\"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/adv/rate/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"adv",
+						"rate",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
