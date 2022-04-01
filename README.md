@@ -1,7 +1,7 @@
 ﻿# 簡介
 ### Lin Yu Chi 的手機程式後端 WEB API (JWT)
 #### 我熟悉用 ASP.NET MVC開發網站，但是 .NET 未來非主流，遇到畢業生無法上手 N-TIER 跟不上開發速度，
-#### 我學主流 Django，熟 .NET 也可使用 Django，讓主管可靈活調度
+#### 我學主流 Django，熟 .NET 也可使用 Django
 
 # django_rent_webapi
 ### Django (Python) 開發使用 rest framework、simple jwt
